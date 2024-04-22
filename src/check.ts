@@ -1,4 +1,5 @@
 import { writeAllSync } from "jsr:@std/io/write-all";
+import chalk from "npm:chalk@5.3.0";
 
 if (import.meta.main) {
   const difficulties = getDifficulties();
@@ -58,7 +59,9 @@ async function typeCheck(difficulties: string[]) {
 
   if (!typeCheckFailed) {
     console.log(
-      `\rProgress: [${">".repeat(60)}] ${numChallenges}/${numChallenges} 100%`,
+      `\rProgress: [${
+        chalk.green(">".repeat(60))
+      }] ${numChallenges}/${numChallenges} 100%`,
     );
     console.log("All challenges type checked successfully!! 🎉");
   }
@@ -87,7 +90,7 @@ function calculateProgress(
   const finished = ">".repeat(Math.floor(progress / 100 * 60));
   const remaining = "-".repeat(60 - finished.length);
   return new TextEncoder().encode(
-    `\rProgress: [${finished}${remaining}] ${
+    `\rProgress: [${chalk.green(finished)}${chalk.red(remaining)}] ${
       challengeIndex + 1
     }/${numChallenges} ${progress.toFixed(1)}%`,
   );
