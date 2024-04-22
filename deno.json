@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "watch": "deno run --allow-all src/main.ts",
-    "sync": "deno run --allow-all src/sync.ts && deno fmt --quiet challenges"
+    "watch": "deno run --allow-read --allow-run src/main.ts",
+    "sync": "deno run --allow-env --allow-write --allow-net src/sync.ts && deno fmt --quiet challenges"
   },
   "lint": {
     "rules": {
@@ -12,6 +12,6 @@
     "include": ["src/", "challenges/"]
   },
   "imports": {
-    "@/": "./"
+    "@/": "./src/"
   }
 }

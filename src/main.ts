@@ -1,8 +1,14 @@
 import { writeAllSync } from "jsr:@std/io/write-all";
 
-const difficulties = ["warm", "easy", "medium", "hard", "extreme"];
+let difficulties = ["warm", "easy", "medium", "hard", "extreme"];
 
 if (import.meta.main) {
+  if (Deno.args.length > 0) {
+    difficulties = Deno.args.every((arg) => difficulties.includes(arg))
+      ? Deno.args
+      : difficulties;
+  }
+
   const watcher = Deno.watchFs("challenges");
 
   console.clear();
@@ -55,9 +61,9 @@ async function typeCheck() {
 
   if (!typeCheckFailed) {
     console.log(
-      `\rProgress: [" + ">".repeat(60) + "] ${numChallenges}/${numChallenges} 100.0%`,
+      `\rProgress: [${">".repeat(60)}] ${numChallenges}/${numChallenges} 100%`,
     );
-    console.log("All challenges type checked successfully!");
+    console.log("All challenges type checked successfully!! 🎉");
   }
 }
 
