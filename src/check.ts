@@ -1,28 +1,25 @@
 import { writeAllSync } from "jsr:@std/io/write-all";
 
-let difficulties = ["warm", "easy", "medium", "hard", "extreme"];
-
 if (import.meta.main) {
-  if (Deno.args.length > 0) {
-    difficulties = Deno.args.every((arg) => difficulties.includes(arg))
-      ? Deno.args
-      : difficulties;
-  }
-
-  const watcher = Deno.watchFs("challenges");
-
-  console.clear();
-  await typeCheck();
-  for await (const event of watcher) {
-    if (event.kind === "modify") {
-      console.clear();
-      await typeCheck();
-    }
-  }
+  const difficulties = getDifficulties();
+  await check(difficulties);
 }
 
-async function typeCheck() {
-  const challenges = getChallenges();
+export function getDifficulties() {
+  const difficulties = ["warm", "easy", "medium", "hard", "extreme"];
+  return Deno.args.length > 0 &&
+      Deno.args.every((arg) => difficulties.includes(arg))
+    ? Deno.args
+    : difficulties;
+}
+
+export async function check(difficulties: string[]) {
+  console.clear();
+  await typeCheck(difficulties);
+}
+
+async function typeCheck(difficulties: string[]) {
+  const challenges = getChallenges(difficulties);
   const numChallenges = Object.values(challenges).reduce(
     (acc, val) => acc + val.length,
     0,
@@ -67,7 +64,7 @@ async function typeCheck() {
   }
 }
 
-function getChallenges() {
+export function getChallenges(difficulties: string[]) {
   const challenges: { [difficulty: string]: string[] } = {};
   for (const difficulty of difficulties) {
     const entries = Deno.readDirSync(`challenges/${difficulty}`);
