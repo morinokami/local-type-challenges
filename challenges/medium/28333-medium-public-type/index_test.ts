@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Public Type", () => {
   /*
+   * Author: KaiKai (@kaikaibenkai)
+   *
    * Remove the key starting with `_` from given type `T`.
    */
 
@@ -18,4 +20,12 @@ Deno.test("Public Type", () => {
     Expect<Equal<PublicType<{ g: "_g" }>, { g: "_g" }>>,
     Expect<Equal<PublicType<{ __h: number; i: unknown }>, { i: unknown }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/28333/answer
+   * > View solutions on GitHub: https://tsch.js.org/28333/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-public-type.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

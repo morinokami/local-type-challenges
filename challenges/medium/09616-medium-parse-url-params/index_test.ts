@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Parse URL Params", () => {
   /*
+   * Author: Anderson. J (@andersonjoseph)
+   *
    * You're required to implement a type-level parser to parse URL params string into an Union.
    *
    * ```ts
@@ -23,4 +25,12 @@ Deno.test("Parse URL Params", () => {
     Expect<Equal<ParseUrlParams<"posts/:id/:user">, "id" | "user">>,
     Expect<Equal<ParseUrlParams<"posts/:id/:user/like">, "id" | "user">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9616/answer
+   * > View solutions on GitHub: https://tsch.js.org/9616/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

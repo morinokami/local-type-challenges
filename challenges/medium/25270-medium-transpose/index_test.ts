@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Transpose", () => {
   /*
+   * Author: Apollo Wayne (@Shinerising)
+   *
    * The transpose of a matrix is an operator which flips a matrix over its diagonal; that is, it switches the row and column indices of the matrix A by producing another matrix, often denoted by A<sup>T</sup>.
    *
    * ```ts
@@ -29,4 +31,12 @@ Deno.test("Transpose", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/25270/answer
+   * > View solutions on GitHub: https://tsch.js.org/25270/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

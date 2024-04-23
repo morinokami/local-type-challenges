@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("CheckRepeatedChars", () => {
   /*
+   * Author: Hong (@RThong)
+   *
    * Implement type ```CheckRepeatedChars<S>``` which will return whether type ```S``` contains duplicated chars?
    *
    * For example:
@@ -22,4 +24,12 @@ Deno.test("CheckRepeatedChars", () => {
     Expect<Equal<CheckRepeatedChars<"cbc">, true>>,
     Expect<Equal<CheckRepeatedChars<"">, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9142/answer
+   * > View solutions on GitHub: https://tsch.js.org/9142/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

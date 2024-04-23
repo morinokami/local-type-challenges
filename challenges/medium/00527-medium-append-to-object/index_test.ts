@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Append to object", () => {
   /*
+   * Author: Andrey Krasovsky (@bre30kra69cs)
+   *
    * Implement a type that adds a new field to the interface. The type takes the three arguments. The output should be an object with the new field.
    *
    * For example
@@ -60,4 +62,12 @@ Deno.test("Append to object", () => {
       Equal<AppendToObject<test3, "moon", false | undefined>, testExpect3>
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/527/answer
+   * > View solutions on GitHub: https://tsch.js.org/527/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-append-to-object.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Omit", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement the built-in `Omit<T, K>` generic without using it.
    *
    * Constructs a type by picking all properties from `T` and then removing `K`
@@ -49,4 +51,12 @@ Deno.test("Omit", () => {
   interface Expected2 {
     title: string;
   }
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3/answer
+   * > View solutions on GitHub: https://tsch.js.org/3/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-omit.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Get Required", () => {
   /*
+   * Author: Zheeeng (@zheeeng)
+   *
    * Implement the advanced util type `GetRequired<T>`, which remains all the required fields
    *
    * For example
@@ -24,4 +26,12 @@ Deno.test("Get Required", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/57/answer
+   * > View solutions on GitHub: https://tsch.js.org/57/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { ExpectExtends, ExpectFalse, ExpectTrue } from "@/utils.ts";
 
 Deno.test("Tree path array", () => {
   /*
+   * Author: Neil Richter (@noook)
+   *
    * Create a type `Path` that represents validates a possible path of a tree under the form of an array.
    *
    * Related challenges:
@@ -60,4 +62,12 @@ Deno.test("Tree path array", () => {
     >,
     ExpectFalse<ExpectExtends<Path<typeof example["foo"]["bar"]>, ["z"]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/15260/answer
+   * > View solutions on GitHub: https://tsch.js.org/15260/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

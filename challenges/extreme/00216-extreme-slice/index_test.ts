@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Slice", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement the JavaScript `Array.slice` function in the type system. `Slice<Arr, Start, End>` takes the three argument. The output should be a subarray of `Arr` from index `Start` to `End`. Indexes with negative numbers should be counted from reversely.
    *
    * For example
@@ -39,4 +41,12 @@ Deno.test("Slice", () => {
     Expect<Equal<Slice<Arr, 1, 0>, []>>,
     Expect<Equal<Slice<Arr, 10, 20>, []>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/216/answer
+   * > View solutions on GitHub: https://tsch.js.org/216/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

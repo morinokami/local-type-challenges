@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Get Optional", () => {
   /*
+   * Author: Zheeeng (@zheeeng)
+   *
    * Implement the advanced util type `GetOptional<T>`, which remains all the optional fields
    *
    * For example
@@ -24,4 +26,12 @@ Deno.test("Get Optional", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/59/answer
+   * > View solutions on GitHub: https://tsch.js.org/59/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

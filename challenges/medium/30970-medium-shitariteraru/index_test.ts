@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IsFixedStringLiteralType", () => {
   /*
+   * Author: 蛭子屋双六 (@sugoroku-y)
+   *
    * Sometimes you may want to determine whether a string literal is a definite type. For example, when you want to check whether the type specified as a class identifier is a fixed string literal type.
    *
    * ```typescript
@@ -63,4 +65,12 @@ Deno.test("IsFixedStringLiteralType", () => {
     | Expect<Equal<IsFixedStringLiteralType<`ABC${null}DEF`>, true>>
     | Expect<Equal<IsFixedStringLiteralType<`ABC${undefined}DEF`>, true>>
     | true;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/30970/answer
+   * > View solutions on GitHub: https://tsch.js.org/30970/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

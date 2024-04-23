@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("MergeAll", () => {
   /*
+   * Author: scarf (@scarf005)
+   *
    * Merge variadic number of types into a new type. If the keys overlap, its values should be merged into an union.
    *
    * For example:
@@ -50,4 +52,12 @@ Deno.test("MergeAll", () => {
     Expect<Equal<MergeAll<[{ a: number }, { a: 1 }]>, { a: number }>>,
     Expect<Equal<MergeAll<[{ a: 1 | 2 }, { a: 1 | 3 }]>, { a: 1 | 2 | 3 }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/27932/answer
+   * > View solutions on GitHub: https://tsch.js.org/27932/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

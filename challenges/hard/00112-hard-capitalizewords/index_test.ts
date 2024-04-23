@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Capitalize Words", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement `CapitalizeWords<T>` which converts the first letter of **each word of a string** to uppercase and leaves the rest as-is.
    *
    * For example
@@ -33,4 +35,12 @@ Deno.test("Capitalize Words", () => {
     >,
     Expect<Equal<CapitalizeWords<"">, "">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/112/answer
+   * > View solutions on GitHub: https://tsch.js.org/112/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

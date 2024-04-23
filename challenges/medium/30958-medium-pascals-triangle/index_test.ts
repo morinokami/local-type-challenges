@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Pascal's triangle", () => {
   /*
+   * Author: Aswin S Vijay (@aswinsvijay)
+   *
    * Given a number N, construct the Pascal's triangle with N rows.
    * [Wikipedia](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
    */
@@ -56,4 +58,12 @@ Deno.test("Pascal's triangle", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/30958/answer
+   * > View solutions on GitHub: https://tsch.js.org/30958/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

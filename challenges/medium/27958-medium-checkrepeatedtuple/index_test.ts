@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("CheckRepeatedTuple", () => {
   /*
+   * Author: bowen (@jiaowoxiaobala)
+   *
    * Implement type `CheckRepeatedChars<T>` which will return whether type `T` contains duplicated member
    *
    * For example:
@@ -24,4 +26,12 @@ Deno.test("CheckRepeatedTuple", () => {
     Expect<Equal<CheckRepeatedTuple<[]>, false>>,
     Expect<Equal<CheckRepeatedTuple<string[]>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/27958/answer
+   * > View solutions on GitHub: https://tsch.js.org/27958/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-checkrepeatedtuple.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

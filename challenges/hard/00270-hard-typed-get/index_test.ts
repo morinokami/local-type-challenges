@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Typed Get", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * The [`get` function in lodash](https://lodash.com/docs/4.17.15#get) is a quite convenient helper for accessing nested values in JavaScript. However, when we come to TypeScript, using functions like this will make you lose the type information. With TS 4.1's upcoming [Template Literal Types](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1-beta/#template-literal-types) feature, properly typing `get` becomes possible. Can you implement it?
    *
    * For example,
@@ -50,4 +52,12 @@ Deno.test("Typed Get", () => {
     "foo.baz": false;
     hello: "world";
   };
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/270/answer
+   * > View solutions on GitHub: https://tsch.js.org/270/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

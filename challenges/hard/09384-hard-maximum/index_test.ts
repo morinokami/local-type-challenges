@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Maximum", () => {
   /*
+   * Author: ch3cknull (@ch3cknull)
+   *
    * ### Description
    *
    * Implement the type `Maximum`, which takes an input type `T`, and returns the maximum value in `T`.
@@ -30,4 +32,12 @@ Deno.test("Maximum", () => {
     Expect<Equal<Maximum<[0, 2, 1]>, 2>>,
     Expect<Equal<Maximum<[1, 20, 200, 150]>, 200>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9384/answer
+   * > View solutions on GitHub: https://tsch.js.org/9384/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Sort", () => {
   /*
+   * Author: Sg (@suica)
+   *
    * In this challenge, you are required to sort natural number arrays in either ascend order or descent order.
    *
    * Ascend order examples:
@@ -57,4 +59,12 @@ Deno.test("Sort", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/741/answer
+   * > View solutions on GitHub: https://tsch.js.org/741/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

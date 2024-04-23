@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Diff", () => {
   /*
+   * Author: ZYSzys (@ZYSzys)
+   *
    * Get an `Object` that is the difference between `O` & `O1`
    */
 
@@ -29,4 +31,12 @@ Deno.test("Diff", () => {
     Expect<Equal<Diff<Foo, Coo>, { age: string; gender: number }>>,
     Expect<Equal<Diff<Coo, Foo>, { age: string; gender: number }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/645/answer
+   * > View solutions on GitHub: https://tsch.js.org/645/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-diff.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

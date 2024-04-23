@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Pinia", () => {
   /*
+   * Author: Pig Fang (@g-plane)
+   *
    * Create a type-level function whose types is similar to [Pinia](https://github.com/posva/pinia) library. You don't need to implement function actually, just adding types.
    *
    * ### Overview
@@ -138,4 +140,12 @@ Deno.test("Pinia", () => {
     Expect<Equal<typeof store.parsedNum, number>>,
     Expect<Equal<typeof r, true>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1290/answer
+   * > View solutions on GitHub: https://tsch.js.org/1290/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

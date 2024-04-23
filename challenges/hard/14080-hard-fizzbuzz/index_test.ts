@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("FizzBuzz", () => {
   /*
+   * Author: Lee Crosby (@Cygnut)
+   *
    * The FizzBuzz problem is a classic test given in coding interviews. The task is simple:
    *
    * Print integers 1 to N, except:
@@ -155,4 +157,12 @@ Deno.test("FizzBuzz", () => {
       ]>
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/14080/answer
+   * > View solutions on GitHub: https://tsch.js.org/14080/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

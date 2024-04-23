@@ -1,6 +1,7 @@
 import { parse } from "jsr:@std/yaml";
 import ora from "npm:ora@8.0.1";
 import pLimit from "npm:p-limit@5.0.0";
+import { typeChallengesSolutions } from "@/type-challenges-solutions.ts";
 
 if (import.meta.main) {
   alert(
@@ -36,11 +37,13 @@ if (import.meta.main) {
       ]);
       const parsedInfo = parseInfo(info);
 
-      const exercise = generateExercise(
+      const exercise = generateChallenge(
         parsedInfo.title,
+        parsedInfo.author,
         readme,
         template,
         testCases,
+        Number(question.split("-")[0]),
       );
 
       Deno.mkdirSync(`challenges/${parsedInfo.difficulty}/${question}`, {
@@ -73,16 +76,18 @@ function getReadMeContent(readme: string) {
 function parseInfo(info: string) {
   return parse(info) as {
     title: string;
-    // author: { name: string; email: string; github: string };
+    author: { name: string; github: string };
     difficulty: "warm" | "easy" | "medium" | "hard" | "extreme";
   };
 }
 
-function generateExercise(
+function generateChallenge(
   title: string,
+  author: { name: string; github: string },
   readme: string,
   template: string,
   testCases: string,
+  questionNumber: number,
 ) {
   let importStatement = "";
   let cases: string[] = [];
@@ -101,6 +106,8 @@ function generateExercise(
 
 Deno.test("${title}", () => {
   /*
+   * Author: ${author.name} (@${author.github})
+   *
 ${getReadMeContent(readme).split("\n").map((l) => `   * ${l}`).join("\n")}
    */
 
@@ -109,5 +116,20 @@ ${getReadMeContent(readme).split("\n").map((l) => `   * ${l}`).join("\n")}
 
   /* _____________ Test Cases _____________ */
   ${cases.map((l) => `  ${l}`).join("\n").trim()}
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/${questionNumber}/answer
+   * > View solutions on GitHub: https://tsch.js.org/${questionNumber}/solutions
+${getSolution(questionNumber)}
+   * > Discover more challenges: https://tsch.js.org
+   */
 });`;
+}
+
+function getSolution(questionNumber: number) {
+  const solution = typeChallengesSolutions[`${questionNumber}`];
+  return solution
+    ? `   * > View solutions on Type Challenges Solutions: ${solution}`
+    : "";
 }

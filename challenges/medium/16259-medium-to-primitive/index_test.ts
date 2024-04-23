@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ToPrimitive", () => {
   /*
+   * Author: 前端子鱼 (@mwc)
+   *
    * Convert a property of type literal (label type) to a primitive type.
    *
    * For example
@@ -63,4 +65,12 @@ Deno.test("ToPrimitive", () => {
   type cases = [
     Expect<Equal<ToPrimitive<PersonInfo>, ExpectedResult>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/16259/answer
+   * > View solutions on GitHub: https://tsch.js.org/16259/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

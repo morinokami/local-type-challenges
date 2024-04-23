@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Unique", () => {
   /*
+   * Author: Pineapple (@Pineapple0919)
+   *
    * Implement the type version of Lodash.uniq, Unique<T> takes an Array T, returns the Array T without repeated values.
    *
    * ```ts
@@ -34,4 +36,12 @@ Deno.test("Unique", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5360/answer
+   * > View solutions on GitHub: https://tsch.js.org/5360/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-unique.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Tuple to Nested Object", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Given a tuple type ```T``` that only contains string type, and a type ```U```, build an object recursively.
    *
    * ```typescript
@@ -28,4 +30,12 @@ Deno.test("Tuple to Nested Object", () => {
     >,
     Expect<Equal<TupleToNestedObject<[], boolean>, boolean>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3188/answer
+   * > View solutions on GitHub: https://tsch.js.org/3188/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-tuple-to-nested-object.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

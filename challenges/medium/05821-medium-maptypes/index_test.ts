@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("MapTypes", () => {
   /*
+   * Author: Krzysztof "Wokay" Łokaj (@wokayme)
+   *
    * Implement `MapTypes<T, R>` which will transform types in object T to different types defined by type R which has the following structure
    *
    * ```ts
@@ -101,4 +103,12 @@ Deno.test("MapTypes", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5821/answer
+   * > View solutions on GitHub: https://tsch.js.org/5821/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-maptypes.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

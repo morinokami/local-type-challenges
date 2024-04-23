@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Capitalize", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement `Capitalize<T>` which converts the first letter of a string to uppercase and leave the rest as-is.
    *
    * For example
@@ -47,4 +49,12 @@ Deno.test("Capitalize", () => {
     Expect<Equal<MyCapitalize<"y">, "Y">>,
     Expect<Equal<MyCapitalize<"z">, "Z">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/110/answer
+   * > View solutions on GitHub: https://tsch.js.org/110/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-capitalize.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

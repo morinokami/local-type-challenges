@@ -2,6 +2,8 @@ import type { Equal, Expect, NotEqual } from "@/utils.ts";
 
 Deno.test("Flip", () => {
   /*
+   * Author: Farhan Kathawala (@kathawala)
+   *
    * Implement the type of `just-flip-object`. Examples:
    *
    * ```typescript
@@ -28,4 +30,12 @@ Deno.test("Flip", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4179/answer
+   * > View solutions on GitHub: https://tsch.js.org/4179/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-flip.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("CartesianProduct", () => {
   /*
+   * Author: jazelly (@jazelly)
+   *
    * Given 2 sets (unions), return its Cartesian product in a set of tuples, e.g.
    * ```ts
    * CartesianProduct<1 | 2, 'a' | 'b'>
@@ -42,4 +44,12 @@ Deno.test("CartesianProduct", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/27862/answer
+   * > View solutions on GitHub: https://tsch.js.org/27862/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

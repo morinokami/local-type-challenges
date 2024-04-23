@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("CountReversePairs", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Given an integer array nums, return the number of reverse pairs in the array.
    *
    * A reverse pair is a pair (i, j) where:
@@ -20,4 +22,12 @@ Deno.test("CountReversePairs", () => {
     Expect<Equal<CountReversePairs<[-1, -1]>, 0>>,
     Expect<Equal<CountReversePairs<[-1]>, 0>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/31447/answer
+   * > View solutions on GitHub: https://tsch.js.org/31447/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

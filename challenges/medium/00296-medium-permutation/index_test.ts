@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Permutation", () => {
   /*
+   * Author: Naoto Ikuno (@pandanoir)
+   *
    * Implement permutation type that transforms union types into the array that includes permutations of unions.
    *
    * ```typescript
@@ -40,4 +42,12 @@ Deno.test("Permutation", () => {
     Expect<Equal<Permutation<boolean>, [false, true] | [true, false]>>,
     Expect<Equal<Permutation<never>, []>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/296/answer
+   * > View solutions on GitHub: https://tsch.js.org/296/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-permutation.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Drop String", () => {
   /*
+   * Author: CaptainOfPhB (@CaptainOfPhB)
+   *
    * Drop the specified chars from a string.
    *
    * For example:
@@ -37,4 +39,12 @@ Deno.test("Drop String", () => {
       Equal<DropString<" b u t t e r f l y ! ", "t">, " b u   e r f l y ! ">
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2059/answer
+   * > View solutions on GitHub: https://tsch.js.org/2059/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

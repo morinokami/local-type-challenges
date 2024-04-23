@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("OmitByType", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * From ```T```, pick a set of properties whose type are not assignable to ```U```.
    *
    * For Example
@@ -42,4 +44,12 @@ Deno.test("OmitByType", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2852/answer
+   * > View solutions on GitHub: https://tsch.js.org/2852/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-omitbytype.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

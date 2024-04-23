@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Replace First", () => {
   /*
+   * Author: George Flinn (@ProjectFlinn)
+   *
    * Implement the type ReplaceFirst<T, S, R> which will replace the first occurrence of S in a tuple T with R. If no such S exists in T, the result should be T.
    */
 
@@ -29,4 +31,12 @@ Deno.test("Replace First", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/25170/answer
+   * > View solutions on GitHub: https://tsch.js.org/25170/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-replace-first.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

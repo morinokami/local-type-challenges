@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Camelize", () => {
   /*
+   * Author: Denis (@denchiklut)
+   *
    * Implement Camelize which converts object from snake_case to to camelCase
    *
    * ```ts
@@ -48,4 +50,12 @@ Deno.test("Camelize", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1383/answer
+   * > View solutions on GitHub: https://tsch.js.org/1383/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

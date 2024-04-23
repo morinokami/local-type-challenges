@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Join", () => {
   /*
+   * Author: Pineapple (@Pineapple0919)
+   *
    * Implement the type version of Array.join, Join<T, U> takes an Array T, string or number U and returns the Array T with U stitching up.
    *
    * ```ts
@@ -23,4 +25,12 @@ Deno.test("Join", () => {
     Expect<Equal<Join<["o"], "u">, "o">>,
     Expect<Equal<Join<[], "u">, "">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5310/answer
+   * > View solutions on GitHub: https://tsch.js.org/5310/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-join.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

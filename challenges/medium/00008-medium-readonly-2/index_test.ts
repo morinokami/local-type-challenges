@@ -2,6 +2,8 @@ import type { Alike, Expect } from "@/utils.ts";
 
 Deno.test("Readonly 2", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement a generic `MyReadonly2<T, K>` which takes two type argument `T` and `K`.
    *
    * `K` specify the set of properties of `T` that should set to Readonly. When `K` is not provided, it should make all properties readonly just like the normal `Readonly<T>`.
@@ -58,4 +60,12 @@ Deno.test("Readonly 2", () => {
     readonly description?: string;
     completed: boolean;
   }
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/8/answer
+   * > View solutions on GitHub: https://tsch.js.org/8/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-readonly-2.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

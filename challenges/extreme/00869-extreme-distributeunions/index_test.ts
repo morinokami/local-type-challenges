@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("DistributeUnions", () => {
   /*
+   * Author: Gabriel Vergnaud (@gvergnaud)
+   *
    * Implement a type `Distribute Unions`, that turns a type of data structure containing union types into a union of
    * all possible types of permitted data structures that don't contain any union. The data structure can be any
    * combination of objects and tuples on any level of nesting.
@@ -138,4 +140,12 @@ Deno.test("DistributeUnions", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/869/answer
+   * > View solutions on GitHub: https://tsch.js.org/869/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("All", () => {
   /*
+   * Author: cutefcc (@cutefcc)
+   *
    * Returns true if all elements of the list are equal to the second parameter passed in, false if there are any mismatches.
    *
    * For example
@@ -36,4 +38,12 @@ Deno.test("All", () => {
     Expect<Equal<All<[unknown], any>, false>>,
     Expect<Equal<All<[1, 1, 2], 1 | 2>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/18142/answer
+   * > View solutions on GitHub: https://tsch.js.org/18142/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("RequiredByKeys", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement a generic `RequiredByKeys<T,  K>` which takes two type argument `T` and `K`.
    *
    * `K` specify the set of properties of `T` that should set to be required. When `K` is not provided, it should make all properties required just like the normal `Required<T>`.
@@ -49,4 +51,12 @@ Deno.test("RequiredByKeys", () => {
     // @ts-expect-error
     Expect<Equal<RequiredByKeys<User, "name" | "unknown">, UserRequiredName>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2759/answer
+   * > View solutions on GitHub: https://tsch.js.org/2759/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-requiredbykeys.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

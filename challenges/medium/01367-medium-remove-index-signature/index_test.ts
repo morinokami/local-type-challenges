@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Remove Index Signature", () => {
   /*
+   * Author: hiroya iizuka (@hiroyaiizuka)
+   *
    * Implement `RemoveIndexSignature<T>` , exclude the index signature from object types.
    *
    * For example:
@@ -48,4 +50,12 @@ Deno.test("Remove Index Signature", () => {
     Expect<Equal<RemoveIndexSignature<FooBar>, { [foobar](): void }>>,
     Expect<Equal<RemoveIndexSignature<Baz>, { bar(): void; baz: string }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1367/answer
+   * > View solutions on GitHub: https://tsch.js.org/1367/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-remove-index-signature.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Currying 1", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * > TypeScript 4.0 is recommended in this challenge
    *
    * [Currying](https://en.wikipedia.org/wiki/Currying) is the technique of converting a function that takes multiple arguments into a sequence of functions that each take a single argument.
@@ -58,4 +60,12 @@ Deno.test("Currying 1", () => {
     >,
     Expect<Equal<typeof curried3, () => true>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/17/answer
+   * > View solutions on GitHub: https://tsch.js.org/17/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

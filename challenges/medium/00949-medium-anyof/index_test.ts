@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("AnyOf", () => {
   /*
+   * Author: null (@kynefuk)
+   *
    * Implement Python liked `any` function in the type system. A type takes the Array and returns `true` if any element of the Array is true. If the Array is empty, return `false`.
    *
    * For example:
@@ -35,4 +37,12 @@ Deno.test("AnyOf", () => {
     Expect<Equal<AnyOf<[0, "", false, [], {}, undefined, null]>, false>>,
     Expect<Equal<AnyOf<[]>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/949/answer
+   * > View solutions on GitHub: https://tsch.js.org/949/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-anyof.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

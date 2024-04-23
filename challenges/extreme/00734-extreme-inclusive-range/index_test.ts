@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Inclusive Range", () => {
   /*
+   * Author: Sg (@suica)
+   *
    * Recursion depth in type system is one of the limitations of TypeScript, the number is around 45.
    *
    * *We need to go deeper*. And we could go deeper.
@@ -360,4 +362,12 @@ Deno.test("Inclusive Range", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/734/answer
+   * > View solutions on GitHub: https://tsch.js.org/734/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

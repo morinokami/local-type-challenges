@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("DeepPick", () => {
   /*
+   * Author: hiroya iizuka (@hiroyaiizuka)
+   *
    * Implement a type DeepPick, that extends Utility types `Pick`.
    * A type takes two arguments.
    *
@@ -72,4 +74,12 @@ Deno.test("DeepPick", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/956/answer
+   * > View solutions on GitHub: https://tsch.js.org/956/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

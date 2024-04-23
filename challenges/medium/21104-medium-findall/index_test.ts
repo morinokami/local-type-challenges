@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("FindAll", () => {
   /*
+   * Author: tunamagur0 (@tunamagur0)
+   *
    * Given a pattern string P and a text string T, implement the type `FindAll<T, P>` that returns an Array that contains all indices (0-indexed) from T where P matches.
    */
 
@@ -22,4 +24,12 @@ Deno.test("FindAll", () => {
     Expect<Equal<FindAll<"AAAA", "A">, [0, 1, 2, 3]>>,
     Expect<Equal<FindAll<"AAAA", "AA">, [0, 1, 2]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/21104/answer
+   * > View solutions on GitHub: https://tsch.js.org/21104/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

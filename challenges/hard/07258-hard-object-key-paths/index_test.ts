@@ -2,6 +2,8 @@ import type { Equal, Expect, ExpectExtends } from "@/utils.ts";
 
 Deno.test("Object Key Paths", () => {
   /*
+   * Author: CattChen (@ChenKS12138)
+   *
    * Get all possible paths that could be called by [_.get](https://lodash.com/docs/4.17.15#get) (a lodash function) to get the value of an object
    *
    * ```typescript
@@ -73,4 +75,12 @@ Deno.test("Object Key Paths", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/7258/answer
+   * > View solutions on GitHub: https://tsch.js.org/7258/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

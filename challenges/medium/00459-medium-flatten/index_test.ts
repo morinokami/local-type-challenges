@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Flatten", () => {
   /*
+   * Author: zhouyiming (@chbro)
+   *
    * In this challenge, you would need to write a type that takes an array and emitted the flatten array type.
    *
    * For example:
@@ -30,4 +32,12 @@ Deno.test("Flatten", () => {
 
   // @ts-expect-error
   type error = Flatten<"1">;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/459/answer
+   * > View solutions on GitHub: https://tsch.js.org/459/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-flatten.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

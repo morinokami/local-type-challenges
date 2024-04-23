@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Union to Intersection", () => {
   /*
+   * Author: Zheeeng (@zheeeng)
+   *
    * Implement the advanced util type `UnionToIntersection<U>`
    *
    * For example
@@ -24,4 +26,12 @@ Deno.test("Union to Intersection", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/55/answer
+   * > View solutions on GitHub: https://tsch.js.org/55/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

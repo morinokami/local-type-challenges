@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Simple Vue", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement a simpiled version of a Vue-like typing support.
    *
    * By providing a function name `SimpleVue` (similar to `Vue.extend` or `defineComponent`), it should properly infer the `this` type inside computed and methods.
@@ -78,4 +80,12 @@ Deno.test("Simple Vue", () => {
       },
     },
   });
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/6/answer
+   * > View solutions on GitHub: https://tsch.js.org/6/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

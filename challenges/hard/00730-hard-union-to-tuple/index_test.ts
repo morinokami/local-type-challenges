@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Union to Tuple", () => {
   /*
+   * Author: Sg (@suica)
+   *
    * Implement a type, `UnionToTuple`, that converts a union to a tuple.
    *
    * As we know, union is an unordered structure, but tuple is an ordered, which implies that we are not supposed to preassume any order will be preserved between terms of one union, when unions are created or transformed.
@@ -66,4 +68,12 @@ Deno.test("Union to Tuple", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/730/answer
+   * > View solutions on GitHub: https://tsch.js.org/730/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

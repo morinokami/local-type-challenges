@@ -2,6 +2,8 @@ import type { Equal, IsTrue } from "@/utils.ts";
 
 Deno.test("Length of String 2", () => {
   /*
+   * Author: null (@uid11)
+   *
    * Implement a type `LengthOfString<S>` that calculates the length of the template string (as in [298 - Length of String](https://tsch.js.org/298)):
    *
    * ```ts
@@ -57,4 +59,12 @@ Deno.test("Length of String 2", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/651/answer
+   * > View solutions on GitHub: https://tsch.js.org/651/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

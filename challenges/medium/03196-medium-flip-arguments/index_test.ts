@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Flip Arguments", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of lodash's ```_.flip```.
    *
    * Type ```FlipArguments<T>``` requires function type ```T``` and returns a new function type which has the same return type of T but reversed parameters.
@@ -41,4 +43,12 @@ Deno.test("Flip Arguments", () => {
     // @ts-expect-error
     FlipArguments<null | undefined>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3196/answer
+   * > View solutions on GitHub: https://tsch.js.org/3196/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-flip-arguments.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Mutable Keys", () => {
   /*
+   * Author: Yugang Cao (@Talljack)
+   *
    * Implement the advanced util type MutableKeys<T>, which picks all the mutable (not readonly) keys into a union.
    *
    * For example:
@@ -29,4 +31,12 @@ Deno.test("Mutable Keys", () => {
     >,
     Expect<Equal<MutableKeys<{}>, never>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5181/answer
+   * > View solutions on GitHub: https://tsch.js.org/5181/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

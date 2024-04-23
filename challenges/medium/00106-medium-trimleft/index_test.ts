@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Trim Left", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement `TrimLeft<T>` which takes an exact string type and returns a new string with the whitespace beginning removed.
    *
    * For example
@@ -24,4 +26,12 @@ Deno.test("Trim Left", () => {
     Expect<Equal<TrimLeft<"">, "">>,
     Expect<Equal<TrimLeft<" \n\t">, "">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/106/answer
+   * > View solutions on GitHub: https://tsch.js.org/106/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-trimleft.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

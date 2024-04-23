@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Parameters", () => {
   /*
+   * Author: midorizemi (@midorizemi)
+   *
    * Implement the built-in Parameters<T> generic without using it.
    *
    * For example:
@@ -26,4 +28,12 @@ Deno.test("Parameters", () => {
     Expect<Equal<MyParameters<typeof bar>, [boolean, { a: "A" }]>>,
     Expect<Equal<MyParameters<typeof baz>, []>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3312/answer
+   * > View solutions on GitHub: https://tsch.js.org/3312/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-parameters.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect, ExpectFalse } from "@/utils.ts";
 
 Deno.test("Permutations of Tuple", () => {
   /*
+   * Author: null (@gaac510)
+   *
    * Given a generic tuple type `T extends unknown[]`, write a type which produces all permutations of `T` as a union.
    *
    * For example:
@@ -55,4 +57,12 @@ Deno.test("Permutations of Tuple", () => {
     >,
     ExpectFalse<Equal<PermutationsOfTuple<[1, number, unknown]>, [unknown]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/21220/answer
+   * > View solutions on GitHub: https://tsch.js.org/21220/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

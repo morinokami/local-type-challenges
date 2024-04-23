@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ValidDate", () => {
   /*
+   * Author: ch3cknull (@ch3cknull)
+   *
    * Implement a type `ValidDate`, which takes an input type T and returns whether T is a valid date.
    *
    * **Leap year is not considered**
@@ -35,4 +37,12 @@ Deno.test("ValidDate", () => {
     Expect<Equal<ValidDate<"01234">, false>>,
     Expect<Equal<ValidDate<"">, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9155/answer
+   * > View solutions on GitHub: https://tsch.js.org/9155/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

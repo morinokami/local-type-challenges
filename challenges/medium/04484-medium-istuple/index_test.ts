@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IsTuple", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement a type ```IsTuple```, which takes an input type ```T``` and returns whether ```T``` is tuple type.
    *
    * For example:
@@ -25,4 +27,12 @@ Deno.test("IsTuple", () => {
     Expect<Equal<IsTuple<number[]>, false>>,
     Expect<Equal<IsTuple<never>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4484/answer
+   * > View solutions on GitHub: https://tsch.js.org/4484/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

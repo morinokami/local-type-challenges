@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Includes", () => {
   /*
+   * Author: null (@kynefuk)
+   *
    * Implement the JavaScript `Array.includes` function in the type system. A type takes the two arguments. The output should be a boolean `true` or `false`.
    *
    * For example:
@@ -37,4 +39,12 @@ Deno.test("Includes", () => {
     Expect<Equal<Includes<[null], undefined>, false>>,
     Expect<Equal<Includes<[undefined], null>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/898/answer
+   * > View solutions on GitHub: https://tsch.js.org/898/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-includes.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Append Argument", () => {
   /*
+   * Author: Maciej Sikora (@maciejsikora)
+   *
    * For given function type `Fn`, and any type `A` (any in this context means we don't restrict the type, and I don't have in mind any type 😉) create a generic type which will take `Fn` as the first argument, `A` as the second, and will produce function type `G` which will be the same as `Fn` but with appended argument `A` as a last one.
    *
    * For example,
@@ -32,4 +34,12 @@ Deno.test("Append Argument", () => {
     // @ts-expect-error
     AppendArgument<unknown, undefined>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/191/answer
+   * > View solutions on GitHub: https://tsch.js.org/191/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-append-argument.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

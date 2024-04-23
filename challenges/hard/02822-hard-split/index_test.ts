@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Split", () => {
   /*
+   * Author: Andrea Simone Costa (@jfet97)
+   *
    * The well known `split()` method splits a string into an array of substrings by looking for a separator, and returns the new array. The goal of this challenge is to split a string, by using a separator, but in the type system!
    *
    * For example:
@@ -58,4 +60,12 @@ Deno.test("Split", () => {
     Expect<Equal<Split<"">, [""]>>,
     Expect<Equal<Split<string, "whatever">, string[]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2822/answer
+   * > View solutions on GitHub: https://tsch.js.org/2822/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

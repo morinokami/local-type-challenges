@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Deep Readonly", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement a generic `DeepReadonly<T>` which make every parameter of an object - and its sub-objects recursively - readonly.
    *
    * You can assume that we are only dealing with Objects in this challenge. Arrays, Functions, Classes and so on do not need to be taken into consideration. However, you can still challenge yourself by covering as many different cases as possible.
@@ -87,4 +89,12 @@ Deno.test("Deep Readonly", () => {
   };
 
   type Expected2 = { readonly a: string } | { readonly b: number };
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9/answer
+   * > View solutions on GitHub: https://tsch.js.org/9/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-deep-readonly.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

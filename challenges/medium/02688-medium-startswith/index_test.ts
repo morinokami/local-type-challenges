@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("StartsWith", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement `StartsWith<T, U>` which takes two exact string types and returns whether `T` starts with `U`
    *
    * For example
@@ -26,4 +28,12 @@ Deno.test("StartsWith", () => {
     Expect<Equal<StartsWith<"abc", " ">, false>>,
     Expect<Equal<StartsWith<"", "">, true>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2688/answer
+   * > View solutions on GitHub: https://tsch.js.org/2688/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-startswith.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

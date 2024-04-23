@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Multiply", () => {
   /*
+   * Author: null (@uid11)
+   *
    * **This challenge continues from [476 - Sum](https://tsch.js.org/476), it is recommended that you finish that one first, and modify your code based on it to start this challenge.**
    *
    * Implement a type `Multiply<A, B>` that multiplies two non-negative integers and returns their product as a string. Numbers can be specified as string, number, or bigint.
@@ -43,4 +45,12 @@ Deno.test("Multiply", () => {
     Expect<Equal<Multiply<"0", 213>, "0">>,
     Expect<Equal<Multiply<0, "0">, "0">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/517/answer
+   * > View solutions on GitHub: https://tsch.js.org/517/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

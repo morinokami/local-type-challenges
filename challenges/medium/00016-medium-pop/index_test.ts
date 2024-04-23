@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Pop", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * > TypeScript 4.0 is recommended in this challenge
    *
    * Implement a generic `Pop<T>` that takes an Array `T` and returns an Array without it's last element.
@@ -28,4 +30,12 @@ Deno.test("Pop", () => {
     Expect<Equal<Pop<["a", "b", "c", "d"]>, ["a", "b", "c"]>>,
     Expect<Equal<Pop<[]>, []>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/16/answer
+   * > View solutions on GitHub: https://tsch.js.org/16/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-pop.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

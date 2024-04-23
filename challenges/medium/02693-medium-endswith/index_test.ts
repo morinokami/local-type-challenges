@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("EndsWith", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement `EndsWith<T, U>` which takes two exact string types and returns whether `T` ends with `U`
    *
    * For example:
@@ -25,4 +27,12 @@ Deno.test("EndsWith", () => {
     Expect<Equal<EndsWith<"abc", "">, true>>,
     Expect<Equal<EndsWith<"abc", " ">, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2693/answer
+   * > View solutions on GitHub: https://tsch.js.org/2693/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-endswith.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

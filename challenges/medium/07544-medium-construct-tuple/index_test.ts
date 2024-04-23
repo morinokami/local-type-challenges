@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Construct Tuple", () => {
   /*
+   * Author: Lo (@LoTwT)
+   *
    * Construct a tuple with a given length.
    *
    * For example
@@ -22,4 +24,12 @@ Deno.test("Construct Tuple", () => {
     // @ts-expect-error
     Expect<Equal<ConstructTuple<1000>["length"], 1000>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/7544/answer
+   * > View solutions on GitHub: https://tsch.js.org/7544/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

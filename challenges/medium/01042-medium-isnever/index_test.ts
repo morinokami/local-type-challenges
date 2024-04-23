@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IsNever", () => {
   /*
+   * Author: hiroya iizuka (@hiroyaiizuka)
+   *
    * Implement a type IsNever, which takes input type `T`.
    * If the type of resolves to `never`, return `true`, otherwise `false`.
    *
@@ -29,4 +31,12 @@ Deno.test("IsNever", () => {
     Expect<Equal<IsNever<[]>, false>>,
     Expect<Equal<IsNever<{}>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1042/answer
+   * > View solutions on GitHub: https://tsch.js.org/1042/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-isnever.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

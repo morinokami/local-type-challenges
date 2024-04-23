@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Currying 2", () => {
   /*
+   * Author: Kim (@hubvue)
+   *
    * [Currying](https://en.wikipedia.org/wiki/Currying) is the technique of converting a function that takes multiple arguments into a sequence of functions that each take a single argument.
    *
    * But in our daily life, currying dynamic arguments is also commonly used, for example, the `Function.bind(this, [...params])` API.
@@ -87,4 +89,12 @@ Deno.test("Currying 2", () => {
     Expect<Equal<typeof curried2Return9, boolean>>,
     Expect<Equal<typeof curried2Return10, boolean>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/462/answer
+   * > View solutions on GitHub: https://tsch.js.org/462/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Square", () => {
   /*
+   * Author: null (@aswinsvijay)
+   *
    * Given a number, your type should return its square.
    */
 
@@ -22,4 +24,12 @@ Deno.test("Square", () => {
     Expect<Equal<Square<-31>, 961>>,
     Expect<Equal<Square<-50>, 2500>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/27133/answer
+   * > View solutions on GitHub: https://tsch.js.org/27133/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

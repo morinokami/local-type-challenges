@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Assign", () => {
   /*
+   * Author: zhangxiaofan (@workkk98)
+   *
    * You have a target object and a source array of objects. You need to copy property from source to target, if it has the same property as the source, you should always keep the source property, and drop the target property. (Inspired by the `Object.assign` API)
    *
    * ### example
@@ -154,4 +156,12 @@ Deno.test("Assign", () => {
     >,
     Expect<Equal<Assign<Case4Target, ["", 0]>, Case4Answer>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9160/answer
+   * > View solutions on GitHub: https://tsch.js.org/9160/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

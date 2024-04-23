@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("KebabCase", () => {
   /*
+   * Author: Johnson Chu (@johnsoncodehk)
+   *
    * Replace the `camelCase` or `PascalCase` string with `kebab-case`.
    *
    * `FooBarBaz` -> `foo-bar-baz`
@@ -32,4 +34,12 @@ Deno.test("KebabCase", () => {
     Expect<Equal<KebabCase<"">, "">>,
     Expect<Equal<KebabCase<"😎">, "😎">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/612/answer
+   * > View solutions on GitHub: https://tsch.js.org/612/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-kebabcase.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

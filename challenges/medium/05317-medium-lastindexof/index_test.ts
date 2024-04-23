@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("LastIndexOf", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of ```Array.lastIndexOf```, ```LastIndexOf<T, U>```  takes an Array ```T```, any ```U``` and returns the index of the last ```U``` in Array ```T```
    *
    * For example:
@@ -23,4 +25,12 @@ Deno.test("LastIndexOf", () => {
     Expect<Equal<LastIndexOf<[string, 2, number, "a", number, 1], number>, 4>>,
     Expect<Equal<LastIndexOf<[string, any, 1, number, "a", any, 1], any>, 5>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5317/answer
+   * > View solutions on GitHub: https://tsch.js.org/5317/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-lastindexof.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

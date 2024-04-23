@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("OptionalUndefined", () => {
   /*
+   * Author: Jesus The Hun (@JesusTheHun)
+   *
    * Implement the util type `OptionalUndefined<T, Props>` that turns all the properties of `T` that can be `undefined`, into optional properties. In addition, a second -optional- generic `Props` can be passed to restrict the properties that can be altered.
    *
    * ```ts
@@ -67,4 +69,12 @@ Deno.test("OptionalUndefined", () => {
     >,
     Expect<Equal<OptionalUndefined<{ value?: string }>, { value?: string }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/28143/answer
+   * > View solutions on GitHub: https://tsch.js.org/28143/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

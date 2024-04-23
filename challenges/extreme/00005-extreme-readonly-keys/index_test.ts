@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Get Readonly Keys", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement a generic `GetReadonlyKeys<T>` that returns a union of the readonly keys of an Object.
    *
    * For example
@@ -37,4 +39,12 @@ Deno.test("Get Readonly Keys", () => {
     readonly description: string;
     completed?: boolean;
   }
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5/answer
+   * > View solutions on GitHub: https://tsch.js.org/5/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

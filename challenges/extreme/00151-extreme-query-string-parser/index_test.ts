@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Query String Parser", () => {
   /*
+   * Author: Pig Fang (@g-plane)
+   *
    * You're required to implement a type-level parser to parse URL query string into a object literal type.
    *
    * Some detailed requirements:
@@ -48,4 +50,12 @@ Deno.test("Query String Parser", () => {
     Expect<Equal<ParseQueryString<"k1=v1&k1">, { k1: ["v1", true] }>>,
     Expect<Equal<ParseQueryString<"k1&k1=v1">, { k1: [true, "v1"] }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/151/answer
+   * > View solutions on GitHub: https://tsch.js.org/151/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

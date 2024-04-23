@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("JSON Schema to TypeScript", () => {
   /*
+   * Author: null (@aswinsvijay)
+   *
    * Implement the generic type JSONSchema2TS which will return the TypeScript type corresponding to the given JSON schema.
    *
    * Additional challenges to handle:
@@ -172,4 +174,12 @@ Deno.test("JSON Schema to TypeScript", () => {
   };
   type Result14 = Expect<Equal<Type14, Expected14>>;
   // - Required fields
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/26401/answer
+   * > View solutions on GitHub: https://tsch.js.org/26401/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Last of Array", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * > TypeScript 4.0 is recommended in this challenge
    *
    * Implement a generic `Last<T>` that takes an Array `T` and returns its last element.
@@ -26,4 +28,12 @@ Deno.test("Last of Array", () => {
     Expect<Equal<Last<[3, 2, 1]>, 1>>,
     Expect<Equal<Last<[() => 123, { a: string }]>, { a: string }>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/15/answer
+   * > View solutions on GitHub: https://tsch.js.org/15/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-last.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

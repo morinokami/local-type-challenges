@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Number Range", () => {
   /*
+   * Author: AaronGuo (@HongxuanG)
+   *
    * Sometimes we want to limit the range of numbers...
    * For examples.
    * ```ts
@@ -162,4 +164,12 @@ Deno.test("Number Range", () => {
     Expect<Equal<NumberRange<0, 2>, Result2>>,
     Expect<Equal<NumberRange<0, 140>, Result3>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/8640/answer
+   * > View solutions on GitHub: https://tsch.js.org/8640/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-number-range.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

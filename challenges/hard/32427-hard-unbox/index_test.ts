@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Unbox", () => {
   /*
+   * Author: Julian Coy (@eXamadeus)
+   *
    * How can we build a type that "unboxes" arrays, functions, promises, and tuples?
    *
    * Example:
@@ -75,4 +77,12 @@ Deno.test("Unbox", () => {
     Expect<Equal<Unbox<Promise<Promise<Promise<number>>>, 3>, number>>,
     Expect<Equal<Unbox<Promise<Promise<Promise<number>>>, 4>, number>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/32427/answer
+   * > View solutions on GitHub: https://tsch.js.org/32427/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

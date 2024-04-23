@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ObjectFromEntries", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of ```Object.fromEntries```
    *
    * For example:
@@ -37,4 +39,12 @@ Deno.test("ObjectFromEntries", () => {
   type cases = [
     Expect<Equal<ObjectFromEntries<ModelEntries>, Model>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2949/answer
+   * > View solutions on GitHub: https://tsch.js.org/2949/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

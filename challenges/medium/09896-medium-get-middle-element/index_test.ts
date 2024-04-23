@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("GetMiddleElement", () => {
   /*
+   * Author: 凤之兮原 (@kongmingLatern)
+   *
    * Get the middle element of the array by implementing a `GetMiddleElement` method, represented by an array
    *
    * > If the length of the array is odd, return the middle element
@@ -37,4 +39,12 @@ Deno.test("GetMiddleElement", () => {
   ];
   // @ts-expect-error
   type error = GetMiddleElement<1, 2, 3>;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9896/answer
+   * > View solutions on GitHub: https://tsch.js.org/9896/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

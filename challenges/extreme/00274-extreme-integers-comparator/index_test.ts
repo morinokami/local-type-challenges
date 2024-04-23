@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Integers Comparator", () => {
   /*
+   * Author: Pig Fang (@g-plane)
+   *
    * Implement a type-level integers comparator. We've provided an enum for indicating the comparison result, like this:
    *
    * - If `a` is greater than `b`, type should be `Comparison.Greater`.
@@ -70,4 +72,12 @@ Deno.test("Integers Comparator", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/274/answer
+   * > View solutions on GitHub: https://tsch.js.org/274/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

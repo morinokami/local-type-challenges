@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("FlattenDepth", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Recursively flatten array up to depth times.
    *
    * For example:
@@ -29,4 +31,12 @@ Deno.test("FlattenDepth", () => {
       Equal<FlattenDepth<[1, [2, [3, [4, [5]]]]], 19260817>, [1, 2, 3, 4, 5]>
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3243/answer
+   * > View solutions on GitHub: https://tsch.js.org/3243/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

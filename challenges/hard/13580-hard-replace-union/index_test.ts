@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Replace Union", () => {
   /*
+   * Author: Konstantin Barabanov (@crutch12)
+   *
    * Given an `union of types` and `array of type pairs` to replace (`[[string, number], [Date, null]]`), return a new union replaced with the `type pairs`.
    */
 
@@ -34,4 +36,12 @@ Deno.test("Replace Union", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/13580/answer
+   * > View solutions on GitHub: https://tsch.js.org/13580/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

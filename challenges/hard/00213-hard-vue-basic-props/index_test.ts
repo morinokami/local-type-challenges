@@ -2,6 +2,8 @@ import type { Debug, Equal, Expect, IsAny } from "@/utils.ts";
 
 Deno.test("Vue Basic Props", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * **This challenge continues from [6 - Simple Vue](//tsch.js.org/6), you should finish that one first, and modify your code based on it to start this challenge**.
    *
    * In addition to the Simple Vue, we are now having a new `props` field in the options. This is a simplified version of Vue's `props` option. Here are some of the rules.
@@ -103,4 +105,12 @@ Deno.test("Vue Basic Props", () => {
       },
     },
   });
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/213/answer
+   * > View solutions on GitHub: https://tsch.js.org/213/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

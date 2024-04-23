@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Mutable", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the generic ```Mutable<T>``` which makes all properties in ```T``` mutable (not readonly).
    *
    * For example
@@ -44,4 +46,12 @@ Deno.test("Mutable", () => {
     // @ts-expect-error
     Mutable<0>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2793/answer
+   * > View solutions on GitHub: https://tsch.js.org/2793/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-mutable.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

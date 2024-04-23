@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Tuple to Enum Object", () => {
   /*
+   * Author: Ryo Hanafusa (@softoika)
+   *
    * The enum is an original syntax of TypeScript (it does not exist in JavaScript). So it is converted to like the following form as a result of transpilation:
    * ```js
    * let OperatingSystem;
@@ -99,4 +101,12 @@ Deno.test("Tuple to Enum Object", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/472/answer
+   * > View solutions on GitHub: https://tsch.js.org/472/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

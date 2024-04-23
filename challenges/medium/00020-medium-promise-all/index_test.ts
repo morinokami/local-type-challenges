@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Promise.all", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Type the function `PromiseAll` that accepts an array of PromiseLike objects, the returning value should be `Promise<T>` where `T` is the resolved result array.
    *
    * ```ts
@@ -35,4 +37,12 @@ Deno.test("Promise.all", () => {
     Expect<Equal<typeof promiseAllTest3, Promise<[number, number, number]>>>,
     Expect<Equal<typeof promiseAllTest4, Promise<number[]>>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/20/answer
+   * > View solutions on GitHub: https://tsch.js.org/20/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-promise-all.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

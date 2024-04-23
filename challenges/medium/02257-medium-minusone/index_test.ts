@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("MinusOne", () => {
   /*
+   * Author: Mustafo Faiz (@fayzzzm)
+   *
    * Given a number (always positive) as a type. Your type should return the number decreased by one.
    *
    * For example:
@@ -25,4 +27,12 @@ Deno.test("MinusOne", () => {
     Expect<Equal<MinusOne<0>, -1>>,
     Expect<Equal<MinusOne<9_007_199_254_740_992>, 9_007_199_254_740_991>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2257/answer
+   * > View solutions on GitHub: https://tsch.js.org/2257/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-minusone.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

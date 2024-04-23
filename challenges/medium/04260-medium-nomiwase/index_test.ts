@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("AllCombinations", () => {
   /*
+   * Author: 蛭子屋双六 (@sugoroku-y)
+   *
    * Implement type ```AllCombinations<S>``` that return all combinations of strings which use characters from ```S``` at most once.
    *
    * For example:
@@ -112,4 +114,12 @@ Deno.test("AllCombinations", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4260/answer
+   * > View solutions on GitHub: https://tsch.js.org/4260/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-nomiwase.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

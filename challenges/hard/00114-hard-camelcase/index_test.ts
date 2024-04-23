@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("CamelCase", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement `CamelCase<T>` which converts `snake_case` string to `camelCase`.
    *
    * For example
@@ -31,4 +33,12 @@ Deno.test("CamelCase", () => {
     Expect<Equal<CamelCase<"">, "">>,
     Expect<Equal<CamelCase<"😎">, "😎">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/114/answer
+   * > View solutions on GitHub: https://tsch.js.org/114/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/hard-camelcase.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

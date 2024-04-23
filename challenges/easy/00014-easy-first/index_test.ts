@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("First of Array", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement a generic `First<T>` that takes an Array `T` and returns its first element's type.
    *
    * For example:
@@ -32,4 +34,12 @@ Deno.test("First of Array", () => {
     // @ts-expect-error
     First<{ 0: "arrayLike" }>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/14/answer
+   * > View solutions on GitHub: https://tsch.js.org/14/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-first.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

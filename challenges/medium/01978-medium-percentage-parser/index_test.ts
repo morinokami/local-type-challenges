@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Percentage Parser", () => {
   /*
+   * Author: SSShuai1999 (@SSShuai1999)
+   *
    * Implement PercentageParser<T extends string>.
    * According to the `/^(\+|\-)?(\d*)?(\%)?$/` regularity to match T and get three matches.
    *
@@ -56,4 +58,12 @@ Deno.test("Percentage Parser", () => {
     Expect<Equal<PercentageParser<"1">, Case10>>,
     Expect<Equal<PercentageParser<"100">, Case11>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1978/answer
+   * > View solutions on GitHub: https://tsch.js.org/1978/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-percentage-parser.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

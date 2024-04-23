@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("printf", () => {
   /*
+   * Author: null (@Bestmain-YS)
+   *
    * Implement `Format<T extends string>` generic.
    *
    * For example,
@@ -26,4 +28,12 @@ Deno.test("printf", () => {
     Expect<Equal<Format<"a%%%dbc">, (d1: number) => string>>,
     Expect<Equal<Format<"a%dbc%s">, (d1: number) => (s1: string) => string>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/545/answer
+   * > View solutions on GitHub: https://tsch.js.org/545/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

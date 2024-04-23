@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Intersection", () => {
   /*
+   * Author: Pineapple (@Pineapple0919)
+   *
    * Implement the type version of Lodash.intersection with a little difference. Intersection<T> takes an Array T containing several arrays or any type element including the union type, and returns a new union containing all intersection elements.
    *
    * ```ts
@@ -26,4 +28,12 @@ Deno.test("Intersection", () => {
     Expect<Equal<Intersection<[[1, 2, 3], 2 | 3 | 4, 2 | 3]>, 2 | 3>>,
     Expect<Equal<Intersection<[[1, 2, 3], 2, 3]>, never>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5423/answer
+   * > View solutions on GitHub: https://tsch.js.org/5423/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

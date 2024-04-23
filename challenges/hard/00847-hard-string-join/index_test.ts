@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("String Join", () => {
   /*
+   * Author: Matt Davis (@tl-matt-davis)
+   *
    * Create a type-safe string join utility which can be used like so:
    *
    * ```ts
@@ -49,4 +51,12 @@ Deno.test("String Join", () => {
     Expect<Equal<typeof hashOutput, "a#b#c">>,
     Expect<Equal<typeof longOutput, "a-b-c-d-e-f-g-h">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/847/answer
+   * > View solutions on GitHub: https://tsch.js.org/847/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Required Keys", () => {
   /*
+   * Author: yituan (@yi-tuan)
+   *
    * Implement the advanced util type `RequiredKeys<T>`, which picks all the required keys into a union.
    *
    * For example
@@ -27,4 +29,12 @@ Deno.test("Required Keys", () => {
     >,
     Expect<Equal<RequiredKeys<{}>, never>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/89/answer
+   * > View solutions on GitHub: https://tsch.js.org/89/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Subtract", () => {
   /*
+   * Author: Lo (@LoTwT)
+   *
    * Implement the type Subtraction that is ` - ` in Javascript by using BuildTuple.
    *
    * If the minuend is less than the subtrahend, it should be `never`.
@@ -28,4 +30,12 @@ Deno.test("Subtract", () => {
     // @ts-expect-error
     Expect<Equal<Subtract<1000, 999>, 1>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/7561/answer
+   * > View solutions on GitHub: https://tsch.js.org/7561/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

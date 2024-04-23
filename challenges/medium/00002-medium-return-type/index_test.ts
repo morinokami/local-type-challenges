@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Get Return Type", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement the built-in `ReturnType<T>` generic without using it.
    *
    * For example
@@ -40,4 +42,12 @@ Deno.test("Get Return Type", () => {
 
   const fn = (v: boolean) => v ? 1 : 2;
   const fn1 = (v: boolean, w: any) => v ? 1 : 2;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2/answer
+   * > View solutions on GitHub: https://tsch.js.org/2/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-return-type.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

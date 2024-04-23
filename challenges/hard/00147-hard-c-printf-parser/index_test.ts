@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("C-printf Parser", () => {
   /*
+   * Author: Pig Fang (@g-plane)
+   *
    * There is a function in C language: `printf`. This function allows us to print something with formatting. Like this:
    *
    * ```c
@@ -53,4 +55,12 @@ Deno.test("C-printf Parser", () => {
     >,
     Expect<Equal<ParsePrintFormat<"The result is %">, []>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/147/answer
+   * > View solutions on GitHub: https://tsch.js.org/147/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("BitwiseXOR", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement ```BitwiseXOR<S1,S2>``` which takes two binary string literal type and returns a binary string that reprents the bitwise XOR of S1 and S2
    *
    * For example:
@@ -24,4 +26,12 @@ Deno.test("BitwiseXOR", () => {
     Expect<Equal<BitwiseXOR<"110", "1">, "111">>,
     Expect<Equal<BitwiseXOR<"101", "11">, "110">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/30575/answer
+   * > View solutions on GitHub: https://tsch.js.org/30575/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

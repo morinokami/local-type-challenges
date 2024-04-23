@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("DeepMutable", () => {
   /*
+   * Author: cutefcc (@cutefcc)
+   *
    * Implement a generic DeepMutable<T> which make every parameter of an object - and its sub-objects recursively - mutable.
    *
    * For example
@@ -124,4 +126,12 @@ Deno.test("DeepMutable", () => {
     // @ts-expect-error
     DeepMutable<0>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/17973/answer
+   * > View solutions on GitHub: https://tsch.js.org/17973/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

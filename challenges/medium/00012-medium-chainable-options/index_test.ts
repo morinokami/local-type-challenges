@@ -2,6 +2,8 @@ import type { Alike, Expect } from "@/utils.ts";
 
 Deno.test("Chainable Options", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Chainable options are commonly used in Javascript. But when we switch to TypeScript, can you properly type it?
    *
    * In this challenge, you need to type an object or a class - whatever you like - to provide two function `option(key, value)` and `get()`. In `option`, you can extend the current config type by the given key and value. We should about to access the final result via `get`.
@@ -80,4 +82,12 @@ Deno.test("Chainable Options", () => {
   type Expected3 = {
     name: number;
   };
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/12/answer
+   * > View solutions on GitHub: https://tsch.js.org/12/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-chainable-options.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

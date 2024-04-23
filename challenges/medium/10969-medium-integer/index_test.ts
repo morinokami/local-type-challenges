@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Integer", () => {
   /*
+   * Author: HuaBing (@hbcraft)
+   *
    * Please complete type `Integer<T>`, type `T` inherits from `number`, if `T` is an integer return it, otherwise return `never`.
    */
 
@@ -23,4 +25,12 @@ Deno.test("Integer", () => {
     Expect<Equal<Integer<typeof x>, never>>,
     Expect<Equal<Integer<typeof y>, 1>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/10969/answer
+   * > View solutions on GitHub: https://tsch.js.org/10969/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

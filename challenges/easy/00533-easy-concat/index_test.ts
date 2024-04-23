@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Concat", () => {
   /*
+   * Author: Andrey Krasovsky (@bre30kra69cs)
+   *
    * Implement the JavaScript `Array.concat` function in the type system. A type takes the two arguments. The output should be a new array that includes inputs in ltr order
    *
    * For example:
@@ -32,4 +34,12 @@ Deno.test("Concat", () => {
 
   // @ts-expect-error
   type error = Concat<null, undefined>;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/533/answer
+   * > View solutions on GitHub: https://tsch.js.org/533/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-concat.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

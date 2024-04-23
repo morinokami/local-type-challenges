@@ -2,6 +2,8 @@ import type { Equal, Expect, IsTrue } from "@/utils.ts";
 
 Deno.test("Tag", () => {
   /*
+   * Author: null (@uid11)
+   *
    * Despite the structural typing system in TypeScript, it is sometimes convenient to mark some types with tags, and so that these tags do not interfere with the ability to assign values  of these types to each other.
    *
    * For example, using tags, you can check that some value passes through the calls of the required functions, and in the correct order:
@@ -406,4 +408,12 @@ Deno.test("Tag", () => {
       Equal<HasExactTags<Tag<Tag<void, "foo">, "bar">, ["foo", "bar"]>, true>
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/697/answer
+   * > View solutions on GitHub: https://tsch.js.org/697/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

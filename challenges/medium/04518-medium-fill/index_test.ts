@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Fill", () => {
   /*
+   * Author: キリサメ qianxi (@qianxi0410)
+   *
    * `Fill`, a common JavaScript function, now let us implement it with types.
    * `Fill<T, N, Start?, End?>`, as you can see,`Fill` accepts four types of parameters, of which `T` and `N` are required parameters, and `Start` and `End` are optional parameters.
    * The requirements for these parameters are: `T` must be a `tuple`, `N` can be any type of value, `Start` and `End` must be integers greater than or equal to 0.
@@ -34,4 +36,12 @@ Deno.test("Fill", () => {
     Expect<Equal<Fill<[1, 2, 3], true, 10, 20>, [1, 2, 3]>>,
     Expect<Equal<Fill<[1, 2, 3], true, 0, 10>, [true, true, true]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4518/answer
+   * > View solutions on GitHub: https://tsch.js.org/4518/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

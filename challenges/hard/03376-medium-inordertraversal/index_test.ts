@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("InorderTraversal", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of binary tree inorder traversal.
    *
    * For example:
@@ -81,4 +83,12 @@ Deno.test("InorderTraversal", () => {
     Expect<Equal<InorderTraversal<typeof tree3>, [2, 1]>>,
     Expect<Equal<InorderTraversal<typeof tree4>, [1, 2]>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3376/answer
+   * > View solutions on GitHub: https://tsch.js.org/3376/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-inordertraversal.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

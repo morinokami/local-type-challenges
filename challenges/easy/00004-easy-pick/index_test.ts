@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Pick", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement the built-in `Pick<T, K>` generic without using it.
    *
    * Constructs a type by picking the set of properties `K` from `T`
@@ -49,4 +51,12 @@ Deno.test("Pick", () => {
     title: string;
     completed: boolean;
   }
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4/answer
+   * > View solutions on GitHub: https://tsch.js.org/4/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-pick.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

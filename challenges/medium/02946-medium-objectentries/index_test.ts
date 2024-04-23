@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ObjectEntries", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of ```Object.entries```
    *
    * For example
@@ -43,4 +45,12 @@ Deno.test("ObjectEntries", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2946/answer
+   * > View solutions on GitHub: https://tsch.js.org/2946/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-objectentries.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

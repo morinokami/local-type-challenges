@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IndexOf", () => {
   /*
+   * Author: Pineapple (@Pineapple0919)
+   *
    * Implement the type version of Array.indexOf, indexOf<T, U> takes an Array T, any U and returns the index of the first U in Array T.
    *
    * ```ts
@@ -24,4 +26,12 @@ Deno.test("IndexOf", () => {
     Expect<Equal<IndexOf<[string, "a"], "a">, 1>>,
     Expect<Equal<IndexOf<[any, 1], 1>, 1>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5153/answer
+   * > View solutions on GitHub: https://tsch.js.org/5153/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

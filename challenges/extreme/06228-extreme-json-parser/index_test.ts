@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("JSON Parser", () => {
   /*
+   * Author: Hydration (@hydrati)
+   *
    * You're required to implement a type-level partly parser to parse JSON string into a object literal type.
    *
    * Requirements:
@@ -102,4 +104,12 @@ Deno.test("JSON Parser", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/6228/answer
+   * > View solutions on GitHub: https://tsch.js.org/6228/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

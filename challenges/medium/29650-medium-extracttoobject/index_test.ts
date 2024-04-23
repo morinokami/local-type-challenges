@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ExtractToObject", () => {
   /*
+   * Author: Maxim Bazuev (@bazuka5801)
+   *
    * Implement a type that extract prop value to the interface. The type takes the two arguments. The output should be an object with the prop values.
    *   Prop value is object.
    *
@@ -65,4 +67,12 @@ Deno.test("ExtractToObject", () => {
     // @ts-expect-error
     Expect<Equal<ExtractToObject<test4, "prop4">, testExpect4>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/29650/answer
+   * > View solutions on GitHub: https://tsch.js.org/29650/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Tuple to Object", () => {
   /*
+   * Author: sinoon (@sinoon)
+   *
    * Given an array, transform it into an object type and the key/value must be in the provided array.
    *
    * For example:
@@ -55,4 +57,12 @@ Deno.test("Tuple to Object", () => {
 
   // @ts-expect-error
   type error = TupleToObject<[[1, 2], {}]>;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/11/answer
+   * > View solutions on GitHub: https://tsch.js.org/11/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-tuple-to-object.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

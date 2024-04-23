@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Readonly", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement the built-in `Readonly<T>` generic without using it.
    *
    * Constructs a type with all properties of T set to readonly, meaning the properties of the constructed type cannot be reassigned.
@@ -40,4 +42,12 @@ Deno.test("Readonly", () => {
       author: string;
     };
   }
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/7/answer
+   * > View solutions on GitHub: https://tsch.js.org/7/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-readonly.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

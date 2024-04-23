@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ReplaceAll", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Implement `ReplaceAll<S, From, To>` which replace the all the substring `From` with `To` in the given string `S`
    *
    * For example
@@ -27,4 +29,12 @@ Deno.test("ReplaceAll", () => {
     Expect<Equal<ReplaceAll<"foboorfoboar", "bo", "b">, "foborfobar">>,
     Expect<Equal<ReplaceAll<"", "", "">, "">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/119/answer
+   * > View solutions on GitHub: https://tsch.js.org/119/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-replaceall.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

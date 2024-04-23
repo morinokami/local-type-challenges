@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Tuple Filter", () => {
   /*
+   * Author: Ryo Hanafusa (@softoika)
+   *
    * Implement a type `FilterOut<T, F>` that filters out items of the given type `F` from the tuple `T`.
    *
    * For example,
@@ -35,4 +37,12 @@ Deno.test("Tuple Filter", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/399/answer
+   * > View solutions on GitHub: https://tsch.js.org/399/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

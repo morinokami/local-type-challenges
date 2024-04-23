@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("SnakeCase", () => {
   /*
+   * Author: Gabriel Vergnaud (@gvergnaud)
+   *
    * Create a `SnakeCase<T>` generic that turns a string formatted in **camelCase** into a string formatted in **snake_case**.
    *
    * A few examples:
@@ -28,4 +30,12 @@ Deno.test("SnakeCase", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/19458/answer
+   * > View solutions on GitHub: https://tsch.js.org/19458/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

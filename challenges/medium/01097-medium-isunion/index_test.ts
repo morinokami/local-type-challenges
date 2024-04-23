@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IsUnion", () => {
   /*
+   * Author: null (@bencor)
+   *
    * Implement a type `IsUnion`, which takes an input type `T` and returns whether `T` resolves to a union type.
    *
    * For example:
@@ -32,4 +34,12 @@ Deno.test("IsUnion", () => {
     Expect<Equal<IsUnion<string | "a">, false>>,
     Expect<Equal<IsUnion<never>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/1097/answer
+   * > View solutions on GitHub: https://tsch.js.org/1097/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-isunion.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

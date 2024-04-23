@@ -2,6 +2,8 @@ import type { Equal, Expect, NotAny } from "@/utils.ts";
 
 Deno.test("Hello World", () => {
   /*
+   * Author: Anthony Fu (@antfu)
+   *
    * Hello, World!
    *
    * In Type Challenges, we use the type system itself to do the assertion.
@@ -29,4 +31,12 @@ Deno.test("Hello World", () => {
     Expect<NotAny<HelloWorld>>,
     Expect<Equal<HelloWorld, string>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/13/answer
+   * > View solutions on GitHub: https://tsch.js.org/13/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/warm-hello-world.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

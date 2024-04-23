@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Absolute", () => {
   /*
+   * Author: Andrey Krasovsky (@bre30kra69cs)
+   *
    * Implement the `Absolute` type. A type that take string, number or bigint. The output should be a positive number string
    *
    * For example
@@ -28,4 +30,12 @@ Deno.test("Absolute", () => {
     Expect<Equal<Absolute<-1_000_000n>, "1000000">>,
     Expect<Equal<Absolute<9_999n>, "9999">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/529/answer
+   * > View solutions on GitHub: https://tsch.js.org/529/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-absolute.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

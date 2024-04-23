@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Combination", () => {
   /*
+   * Author: Homyee King (@HomyeeKing)
+   *
    * Given an array of strings, do Permutation & Combination.
    * It's also useful for the prop types like video [controlsList](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList)
    *
@@ -37,4 +39,12 @@ Deno.test("Combination", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/8767/answer
+   * > View solutions on GitHub: https://tsch.js.org/8767/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

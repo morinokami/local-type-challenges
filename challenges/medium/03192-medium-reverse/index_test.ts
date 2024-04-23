@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Reverse", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of ```Array.reverse```
    *
    * For example:
@@ -28,4 +30,12 @@ Deno.test("Reverse", () => {
     // @ts-expect-error
     Reverse<{ key: "value" }>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/3192/answer
+   * > View solutions on GitHub: https://tsch.js.org/3192/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-reverse.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

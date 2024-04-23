@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Greater Than", () => {
   /*
+   * Author: ch3cknull (@ch3cknull)
+   *
    * In This Challenge, You should implement a type `GreaterThan<T, U>` like `T > U`
    *
    * Negative numbers do not need to be considered.
@@ -33,4 +35,12 @@ Deno.test("Greater Than", () => {
     Expect<Equal<GreaterThan<111, 11>, true>>,
     Expect<Equal<GreaterThan<1234567891011, 1234567891010>, true>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/4425/answer
+   * > View solutions on GitHub: https://tsch.js.org/4425/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

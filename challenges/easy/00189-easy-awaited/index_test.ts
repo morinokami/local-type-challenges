@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Awaited", () => {
   /*
+   * Author: Maciej Sikora (@maciejsikora)
+   *
    * If we have a type which is a wrapped type like Promise, how we can get the type which is inside the wrapped type?
    *
    * For example: if we have `Promise<ExampleType>` how to get ExampleType?
@@ -35,4 +37,12 @@ Deno.test("Awaited", () => {
 
   // @ts-expect-error
   type error = MyAwaited<number>;
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/189/answer
+   * > View solutions on GitHub: https://tsch.js.org/189/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/easy-awaited.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

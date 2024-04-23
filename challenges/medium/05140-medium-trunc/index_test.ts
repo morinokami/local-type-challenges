@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Trunc", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the type version of ```Math.trunc```, which takes string or number and returns the integer part of a number by removing any fractional digits.
    *
    * For example:
@@ -26,4 +28,12 @@ Deno.test("Trunc", () => {
     Expect<Equal<Trunc<"-10.234">, "-10">>,
     Expect<Equal<Trunc<10>, "10">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/5140/answer
+   * > View solutions on GitHub: https://tsch.js.org/5140/solutions
+   * > View solutions on Type Challenges Solutions: https://ghaiklor.github.io/type-challenges-solutions/en/medium-trunc.html
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

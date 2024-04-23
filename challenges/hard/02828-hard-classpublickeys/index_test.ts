@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("ClassPublicKeys", () => {
   /*
+   * Author: jiangshan (@jiangshanmeta)
+   *
    * Implement the generic `ClassPublicKeys<T>` which returns all public keys of a class.
    *
    * For example:
@@ -42,4 +44,12 @@ Deno.test("ClassPublicKeys", () => {
   type cases = [
     Expect<Equal<ClassPublicKeys<A>, "str" | "getNum">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/2828/answer
+   * > View solutions on GitHub: https://tsch.js.org/2828/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Count Element Number To Object", () => {
   /*
+   * Author: 凤之兮原 (@kongmingLatern)
+   *
    * With type ``CountElementNumberToObject``, get the number of occurrences of every item from an array and return them in an object. For example:
    *
    * ~~~ts
@@ -78,4 +80,12 @@ Deno.test("Count Element Number To Object", () => {
       }>
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/9989/answer
+   * > View solutions on GitHub: https://tsch.js.org/9989/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

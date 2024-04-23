@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("String to Number", () => {
   /*
+   * Author: Pig Fang (@g-plane)
+   *
    * Convert a string literal to a number, which behaves like `Number.parseInt`.
    */
 
@@ -16,4 +18,12 @@ Deno.test("String to Number", () => {
     Expect<Equal<ToNumber<"27">, 27>>,
     Expect<Equal<ToNumber<"18@7_$%">, never>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/300/answer
+   * > View solutions on GitHub: https://tsch.js.org/300/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

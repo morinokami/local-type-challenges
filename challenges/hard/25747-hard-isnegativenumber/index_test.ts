@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("IsNegativeNumber", () => {
   /*
+   * Author: andrew jarrett (@ahrjarrett)
+   *
    * Sometimes when working with numeric literals, we need to rule out (or enforce) that the provided number is a positive integer.
    *
    * To do that, we first need a way to tell if the number is negative.
@@ -30,4 +32,12 @@ Deno.test("IsNegativeNumber", () => {
     Expect<Equal<IsNegativeNumber<1.9>, false>>,
     Expect<Equal<IsNegativeNumber<100_000_000>, false>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/25747/answer
+   * > View solutions on GitHub: https://tsch.js.org/25747/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

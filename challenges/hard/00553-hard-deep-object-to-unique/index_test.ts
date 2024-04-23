@@ -2,6 +2,8 @@ import type { Equal, IsFalse, IsTrue } from "@/utils.ts";
 
 Deno.test("Deep object to unique", () => {
   /*
+   * Author: null (@uid11)
+   *
    * TypeScript has structural type system, but sometimes you want a function to accept only some previously well-defined unique objects (as in the nominal type system), and not any objects that have the required fields.
    *
    * Create a type that takes an object and makes it and all deeply nested objects in it unique, while preserving the string and numeric keys of all objects, and the values of all properties on these keys.
@@ -61,4 +63,12 @@ Deno.test("Deep object to unique", () => {
     IsTrue<Equal<keyof UniqBar["baz"], keyof UniqFoo["baz"]>>,
     IsTrue<Equal<keyof Foo, keyof UniqFoo & string>>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/553/answer
+   * > View solutions on GitHub: https://tsch.js.org/553/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

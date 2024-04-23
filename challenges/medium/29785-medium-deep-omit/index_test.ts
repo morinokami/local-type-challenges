@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Deep Omit", () => {
   /*
+   * Author: bowen (@jiaowoxiaobala)
+   *
    * Implement a type`DeepOmit`, Like Utility types [Omit](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys), A type takes two arguments.
    *
    * For example:
@@ -52,4 +54,12 @@ Deno.test("Deep Omit", () => {
       >
     >,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/29785/answer
+   * > View solutions on GitHub: https://tsch.js.org/29785/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });

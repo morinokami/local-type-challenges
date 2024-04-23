@@ -2,6 +2,8 @@ import type { Equal, Expect } from "@/utils.ts";
 
 Deno.test("Sum", () => {
   /*
+   * Author: null (@uid11)
+   *
    * Implement a type `Sum<A, B>` that summing two non-negative integers and returns the sum as a string. Numbers can be specified as a string, number, or bigint.
    *
    * For example,
@@ -32,4 +34,12 @@ Deno.test("Sum", () => {
     Expect<Equal<Sum<"0", 213>, "213">>,
     Expect<Equal<Sum<0, "0">, "0">>,
   ];
+
+  /* _____________ Further Steps _____________ */
+  /*
+   * > Share your solutions: https://tsch.js.org/476/answer
+   * > View solutions on GitHub: https://tsch.js.org/476/solutions
+
+   * > Discover more challenges: https://tsch.js.org
+   */
 });
