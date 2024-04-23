@@ -34,7 +34,7 @@ It is also possible to specify multiple difficulty levels:
 deno task watch easy medium
 ```
 
-It is also possible to type check only once without watching for changes:
+You can also type check only once without watching for changes:
 
 ```sh
 deno task check
@@ -48,3 +48,5 @@ To sync challenges with the latest version, run the following command:
 ```sh
 deno task sync
 ```
+
+Note that this command overwrites the existing challenges, so make sure to back up your changes if you have made any.

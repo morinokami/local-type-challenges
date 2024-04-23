@@ -2,7 +2,6 @@
   "tasks": {
     "check": "deno run --allow-env --allow-read --allow-run src/check.ts",
     "watch": "deno run --allow-env --allow-read --allow-run src/watch.ts",
-    "list": "TODO: not implemented",
     "sync": "deno run --allow-env --allow-write --allow-net src/sync.ts && deno fmt --quiet challenges"
   },
   "lint": {
