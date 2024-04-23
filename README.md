@@ -34,6 +34,13 @@ It is also possible to specify multiple difficulty levels:
 deno task watch easy medium
 ```
 
+It is also possible to type check only once without watching for changes:
+
+```sh
+deno task check
+deno task check medium # Check only medium challenges
+```
+
 ## Syncing Challenges
 
 TODO: Add instructions for syncing challenges.

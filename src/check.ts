@@ -67,7 +67,7 @@ async function typeCheck(difficulties: string[]) {
   }
 }
 
-export function getChallenges(difficulties: string[]) {
+function getChallenges(difficulties: string[]) {
   const challenges: { [difficulty: string]: string[] } = {};
   for (const difficulty of difficulties) {
     const entries = Deno.readDirSync(`challenges/${difficulty}`);
