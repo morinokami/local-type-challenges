@@ -43,4 +43,8 @@ deno task check medium # Check only medium challenges
 
 ## Syncing Challenges
 
-TODO: Add instructions for syncing challenges.
+To sync challenges with the latest version, run the following command:
+
+```sh
+deno task sync
+```
