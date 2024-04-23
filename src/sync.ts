@@ -3,7 +3,7 @@ import ora from "npm:ora@8.0.1";
 import pLimit from "npm:p-limit@5.0.0";
 
 if (import.meta.main) {
-  // TODO: Warn user that this will remove all challenges
+  alert("This will remove all challenges. Are you sure you want to continue?");
 
   try {
     Deno.removeSync("challenges", { recursive: true });
